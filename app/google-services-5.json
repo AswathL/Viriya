@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "637316680796",
+    "project_id": "viriya-7f492",
+    "storage_bucket": "viriya-7f492.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637316680796:android:718e17af81544a17f0ea99",
+        "android_client_info": {
+          "package_name": "com.example.viriya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637316680796-96pkual9uuc9djvcv4hktidpuunaj685.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.viriya",
+            "certificate_hash": "db099c6a5d64d2ddb61ddea647e27c535c3164c3"
+          }
+        },
+        {
+          "client_id": "637316680796-n7lq1trmmtrucsot1dr2n1f23vbpnkpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOZ1LGXeX8GGV2eVTbeRokR1DoRXnm42E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637316680796-n7lq1trmmtrucsot1dr2n1f23vbpnkpj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_main"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="#37386E"
+
+    android:orientation="vertical"
+
+    android:theme="@style/Theme.AppCompat"
+
+    tools:context=".MainActivity">
+
+
+    <ImageView
+
+        android:id="@+id/imageView"
+
+        android:layout_width="304dp"
+
+        android:layout_height="261dp"
+
+        android:layout_marginBottom="12dp"
+
+        android:background="@drawable/designer_21_removebg"
+        app:layout_constraintBottom_toTopOf="@+id/ly3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ly3"
+        android:layout_width="413dp"
+        android:layout_height="366dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/background_purple_1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/songProgressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="344dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="\n*Viriya: A Song of Serenity*"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="fill_horizontal"
+                    android:text="(Verse 1)
+In the silence of your struggle, when the world seems grey and dull,
+Viriya's light will guide you, through the shadows, through the lull.
+Screening for the hidden pains, anxiety and somber rains,
+Depression's grip, and somatic strains, Viriya's care will heal the chains."
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="fill_horizontal"
+                    android:text="(Chorus)
+Viriya, Viriya, a beacon in the night,
+Viriya, Viriya, making futures bright.
+With a map to guide you to the nearest aid,
+And a voice to answer you, never be afraid.
+"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Verse 2)
+A chatbot friend, a voice so kind, telling, &quot;Greetings! ask any questions related to mental health&quot;
+Connecting dots, connecting lives, with healing centers of all kinds.
+A forum space to share and breathe, your experiences, to weave,
+A tapestry of shared relief, in Viriya's embrace, you'll find reprieve."
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Bridge)
+Inspired by teachings old and wise, a name that echoes through the skies,
+Viriya - the energy that never dies, in every heart, it softly lies.\n"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Outro) So let this song, in tune and voice, remind you that you have a choice, To seek the help, to make the noise, with Viriya, reclaim your joys.\n"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+
+
+                <!-- Your terms and conditions TextViews here -->
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/songProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="376dp"
+        android:layout_height="13dp"
+        android:layout_marginBottom="38dp"
+        android:padding="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+
+        android:layout_width="271dp"
+
+
+        android:layout_height="45dp"
+
+        android:background="@drawable/background_btn_2"
+
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+
+            android:id="@+id/pause"
+
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+
+            android:layout_width="125dp"
+
+            android:layout_height="match_parent"
+
+            android:background="@android:drawable/ic_media_pause"
+
+            android:onClick="musicpause" />
+
+
+        <Button
+
+            android:id="@+id/start"
+
+            style="@style/Widget.AppCompat.Button.Borderless"
+
+            android:layout_width="125dp"
+
+            android:layout_height="match_parent"
+
+            android:background="@android:drawable/ic_media_play"
+
+            android:onClick="musicplay" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

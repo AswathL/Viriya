@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.viriya">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="Viriya"
+        android:roundIcon="@mipmap/ic_launcher1_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project872">
+        <activity
+            android:name=".ConversationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".introActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viriyasongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".registerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".privacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".aboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".qaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".termsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mhcActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDOZ1LGXeX8GGV2eVTbeRokR1DoRXnm42E" />
+    </application>
+
+</manifest>

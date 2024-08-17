@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="171dp">
+
+                    <!-- Added bottom constraint -->
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="127dp"
+                        android:layout_height="152dp"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/ic_launcher1_round" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="222dp"
+                        android:layout_height="155dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:gravity="center"
+                        android:text="Elizabeth"
+                        android:textColor="#37386E"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/imageView10"
+                        tools:layout_editor_absoluteY="1dp" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Hey there, I'm Viriya, your guide to exploring the depths of your mental well-being"
+                    android:gravity="center"
+                    android:textColor="#37386E"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/sta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_button_background"
+
+                        android:drawablePadding="16dp"
+                        android:ems="10"
+                        android:text="Start screening assessment"
+                        android:inputType="text"
+                        android:padding="1dp"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popular_items_layout"
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/designer_43_modified">
+
+                    <ImageView
+                        android:id="@+id/chatbot"
+                        android:layout_width="340dp"
+                        android:layout_height="154dp" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We're here to help"
+                android:layout_marginStart="20dp"
+                android:textColor="#37386E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/popular_items_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="32dp">
+
+                    <!-- Add your popular items dynamically here -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/mapss"
+                            android:layout_width="226dp"
+                            android:layout_height="128dp"
+                            android:src="@drawable/designer_40_modified" />
+
+                        <TextView
+                            android:layout_width="259dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Locate the closest mental health centre"
+                            android:textColor="#37386E"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/voicecall"
+                            android:layout_width="226dp"
+                            android:layout_height="128dp"
+
+                            android:src="@drawable/designer_25_modified" />
+
+                        <TextView
+                            android:layout_width="259dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Query call line"
+                            android:textColor="#37386E"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/qabot"
+                            android:layout_width="226dp"
+                            android:layout_height="128dp"
+                            android:src="@drawable/designer_42_modified" />
+
+                        <TextView
+                            android:layout_width="259dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Query chat"
+                            android:textColor="#37386E"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Add more ImageViews and TextViews as needed -->
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+            <LinearLayout
+                android:id="@+id/popular_items_layout"
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/quot1"
+                    android:layout_width="match_parent"
+                    android:layout_height="162dp"
+                    android:text="&quot;The mind that perceives the limitation is the limitation&quot;\n\nGautama Buddha"
+                    android:textColor="#ffffff"
+                    android:padding="30dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="0.120000005" />
+            </LinearLayout>
+
+            <!-- Category Section -->
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connecting people"
+                android:layout_marginStart="20dp"
+                android:textColor="#37386E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/popular_items_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="32dp">
+
+                    <!-- Add your popular items dynamically here -->
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/mhc"
+                            android:layout_width="226dp"
+                            android:layout_height="128dp"
+                            android:src="@drawable/designer_41_modified" />
+
+                        <TextView
+                            android:layout_width="259dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Connect with mental health centres"
+                            android:textColor="#37386E"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/forum"
+                            android:layout_width="226dp"
+                            android:layout_height="128dp"
+                            android:src="@drawable/designer_39_modified" />
+
+                        <TextView
+                            android:layout_width="259dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Share mental health experience"
+                            android:textColor="#37386E"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <!-- Add more ImageViews and TextViews as needed -->
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:id="@+id/popular_items_layout"
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:padding="30dp"
+                    android:text="&quot;A person can rise through the efforts of his own mind; he is his own friend or enemy&quot;\n\nBhagavad Gita 6.5"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="0.120000005" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/white"
+            app:fabCradleMargin="8dp"
+            app:fabCradleRoundedCornerRadius="50dp"
+            app:fabCradleVerticalOffset="6dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/helpline1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/callimg1" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Helpline"
+                        android:textAlignment="center"
+                        android:textColor="#37386E"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        app:srcCompat="@drawable/profileimg1" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:textAlignment="center"
+                        android:textColor="#37386E"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profileBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        app:srcCompat="@drawable/reportimg1" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Report"
+                        android:textAlignment="center"
+                        android:textColor="#37386E"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/calandar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        app:srcCompat="@drawable/about" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="About"
+                        android:textAlignment="center"
+                        android:textColor="#37386E"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

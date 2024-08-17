@@ -1,0 +1,30 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/project872/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/worldsat/AndroidStudioProjects/project872/app/src/main/res/drawable/background_btn_2.xml" value="0.3675" />
+        <entry key="..\:/Users/worldsat/AndroidStudioProjects/project872/app/src/main/res/drawable/background_edittext.xml" value="0.336" />
+        <entry key="..\:/Users/worldsat/AndroidStudioProjects/project872/app/src/main/res/drawable/background_edittext_white.xml" value="0.3675" />
+        <entry key="..\:/Users/worldsat/AndroidStudioProjects/project872/app/src/main/res/drawable/background_purple_1.xml" value="0.3675" />
+        <entry key="..\:/Users/worldsat/AndroidStudioProjects/project872/app/src/main/res/drawable/top_background.xml" value="0.3675" />
+        <entry key="..\:/Users/worldsat/AndroidStudioProjects/project872/app/src/main/res/layout/activity_login.xml" value="0.30085470085470084" />
+        <entry key="..\:/Users/worldsat/AndroidStudioProjects/project872/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/worldsat/AndroidStudioProjects/project872/app/src/main/res/layout/activity_signup.xml" value="0.30085470085470084" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.4803664921465969" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

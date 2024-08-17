@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37386E"
+    tools:context=".profileActivity">
+
+    <!-- Personal Details TextView -->
+
+    <!-- CircleImageView for Profile Image -->
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="Personal Details"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <!-- EditText for Username -->
+
+    <!-- EditText for Email -->
+
+
+    <!-- Button for Logout -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView4"
+        android:layout_width="159dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="110dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="343dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/background_edittext"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="16dp"
+        android:hint="Username"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="343dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/background_edittext"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="16dp"
+        android:hint="Mail"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="233dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/background_button"
+        android:drawablePadding="16dp"
+        android:hint="Logout"
+        android:padding="3dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!-- Placeholder for other views -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

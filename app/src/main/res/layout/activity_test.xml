@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37386e">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="407dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Terms and Conditions"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ly3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ly3"
+        android:layout_width="407dp"
+        android:layout_height="664dp"
+        android:background="@drawable/background_purple_1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+                <!-- Your terms and conditions TextViews here -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="1. Acceptance of Terms: By downloading, installing, or using the  (&quot;Viriya&quot;) app, you agree to be bound by these Terms and Conditions."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="fill_horizontal"
+                    android:text="2. Purpose of the App: The App is designed to provide users with mental health screening assessments and information. It is not a substitute for professional medical advice, diagnosis, or treatment."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="fill_horizontal"
+                    android:text="3. User Eligibility: Users must be at least 18 years old to use the App. Users under 18 must have parental consent."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="4. Privacy Policy: Your privacy is important to us. Please refer to our Privacy Policy for information on how we collect, use, and disclose your personal information."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="fill_horizontal"
+                    android:text="5. Disclaimer: The App is provided on an &quot;as is&quot; and &quot;as available&quot; basis. We make no warranties or representations about the accuracy or completeness of the information provided through the App."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="fill_horizontal"
+                    android:text="6. Not a Medical Diagnosis: The assessments provided by the App are not intended to diagnose any mental health condition. Always consult with a qualified healthcare professional for diagnosis and treatment."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="fill_horizontal"
+                    android:text="7. Emergency Situations: If you are experiencing a mental health crisis or emergency, do not use the App. Instead, seek immediate assistance from a qualified healthcare provider or emergency services."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="fill_horizontal"
+                    android:text="8. User Conduct: Users agree to use the App in accordance with all applicable laws and regulations. You may not use the App for any unlawful or unauthorized purpose."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="fill_horizontal"
+                    android:text="9. Intellectual Property: All content and materials provided through the App are the property of the app developer or its licensors and are protected by intellectual property laws."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="fill_horizontal"
+                    android:text="10. Modifications to the App: We reserve the right to modify, suspend, or discontinue the App or any part of it at any time without prior notice."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="fill_horizontal"
+                    android:text="11. Limitation of Liability: We will not be liable to you for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with your use of the App."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="fill_horizontal"
+                    android:text="12. Indemnification: You agree to indemnify and hold harmless the app developer, its affiliates, and their respective officers, directors, employees, and agents from any claims, damages, or losses arising out of your use of the App."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="fill_horizontal"
+                    android:text="13. Changes to Terms: We reserve the right to update or modify these Terms and Conditions at any time without prior notice. Your continued use of the App after any changes indicates your acceptance of the revised Terms."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:autoLink="email"
+                    android:gravity="fill_horizontal"
+                    android:text="14. Contact Us: If you have any questions or concerns about these Terms and Conditions, please contact us at viriyaapp@gmail.com."
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
