@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37386e">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/appLogoImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/designer_21_removebg"
+        app:layout_constraintDimensionRatio="h,16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Viriya"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/appLogoImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Version and Developer Info -->
+    <TextView
+        android:id="@+id/versionDeveloperTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0\n• Developed by Aswath, Aditya, Anusha Anand •\nunder the guidance of Mrs. G. Rathi"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/appNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="8dp"/>
+
+    <!-- Privacy Policy Button -->
+    <Button
+        android:id="@+id/privacyPolicyButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:textColor="@android:color/white"
+        android:background="@drawable/background_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/termsButton"
+        app:layout_constraintTop_toBottomOf="@id/versionDeveloperTextView"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Terms and Conditions Button -->
+    <Button
+        android:id="@+id/termsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions"
+        android:textColor="@android:color/white"
+        android:background="@drawable/background_button"
+        app:layout_constraintStart_toEndOf="@id/privacyPolicyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/versionDeveloperTextView"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Features Section -->
+    <TextView
+        android:id="@+id/featuresTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Features:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/privacyPolicyButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/featuresTitleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_purple_1">
+
+        <TextView
+            android:id="@+id/featuresDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Self-Screening Chatbot: Assess your mental health with personalized insights.\n\nLocator for Nearest Doctors: Find nearby mental health professionals easily.\n\nVoicebot Integration: Get support through voice calls with a compassionate voicebot.\n\nInformative Chatbot: Access tips, resources, and coping strategies.\n\nAppointment Booking: Schedule appointments with psychiatrists directly.\n\nCommunity Forum: Connect with others and share experiences.\n\nHelpline Call Feature: Get immediate support in times of crisis.\n"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
